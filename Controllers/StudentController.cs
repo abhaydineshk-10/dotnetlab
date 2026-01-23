@@ -2,19 +2,15 @@
 
 namespace RoutingDemo.Controllers
 {
+
     public class StudentController : Controller
     {
-        [Route("Details/{id}")]
-        public IActionResult Details(int id)
-        {
-            return Content("Student ID is:" + id);
-        }
+        [Route("Input/{id}")]
 
-        [Route("Marks/{id}/{subject}")]
-        //multiple route parameters
-        public IActionResult Marks(int id, string subject)
+        public IActionResult Input(int id, string name)
         {
-            return Content("Student ID: " + id + ",subject:" + subject);
+            string message = $"Studwnt ID: {id}, Student Name:{name}";
+            return Content(message);
         }
     }
 }

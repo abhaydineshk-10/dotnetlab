@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Routing.Models;
+using routinginput.Models;
 
-namespace Routing.Controllers
+namespace routinginput.Controllers
 {
     public class HomeController : Controller
     {
